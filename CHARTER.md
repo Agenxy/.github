@@ -7,6 +7,24 @@ that contradicts it, this document wins and the repository is wrong.
 [ENGINEERING.md](ENGINEERING.md) is the technical half: how we build. This one is
 why.
 
+## What the name is for
+
+**Agency: the ability to make decisions and act independently.** Everything below
+is downstream of it, and when two rules here appear to conflict, the one that
+leaves more decisions with the user wins.
+
+The failure we are organised against is a decision that was yours being held by
+somebody else. It usually arrives wearing something reasonable. A default you
+cannot see. A restriction sold as safety. A useful feature that needs to watch
+you first. A tool that refuses a legitimate instruction because its author
+disapproved of the instruction. A licence check between you and work you already
+paid for. Those look like separate complaints and are one.
+
+This is not a preference for a category of software. It is not local-first
+software, or command-line software, or developer tools, though ours tend to be
+those things because that is where the decisions can still be handed back. It is
+about who ends up holding the decision.
+
 ## Licence
 
 **Apache 2.0. Every project, chosen at the moment the repository is created.**
@@ -24,7 +42,8 @@ one outside contributor it is a courtesy message. With fifty it is a project.
 
 ## The user is the authority
 
-Our software executes what it was asked to do. It does not reserve a namespace
+This is the previous section made operational. Our software executes what it was
+asked to do. It does not reserve a namespace
 for itself, refuse a technically valid instruction because it disapproves,
 disguise a failure to look tidier, or invent restrictions that serve us rather
 than the person running it. Power over your own machine should be legible and

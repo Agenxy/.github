@@ -1,16 +1,23 @@
 ## Agenxy
 
-Local-first software for technical users. It runs on your machine, does what you
-asked, and nothing it learns leaves the machine.
+**Agency**: the ability to make decisions and act independently. That is what the
+name is for, and it is the thing every project here is built toward.
 
-Everything here is Apache 2.0 and works completely, offline, with no trial, no
+Software should hand you the information and the controls, then get out of the
+way. It should not decide on your behalf what you are allowed to want, obscure
+what it is doing, report on you to somebody else, or stop working because a
+licence server had an opinion. Those are not separate complaints. They are all
+the same one: someone else holding a decision that was yours.
+
+So everything here is Apache 2.0 and works completely, offline, with no trial, no
 licence key and no telemetry. We do not log what you do with our software. If one
 of our servers were breached tomorrow, nobody should need to change a password,
-because there is nothing held about you to find.
+because there is nothing held about you to find. Those follow from the first
+paragraph rather than sitting beside it.
 
 ### [Lanes](https://github.com/agenxy/lanes)
 
-The first of them. Coordination and situational awareness for the AI agents
+The first one. Coordination and situational awareness for the AI agents
 running on your machine, across whatever projects they have open. Each agent
 registers a lane, declares what it is pursuing, and is told immediately if
 someone else is already pursuing it. Agents exchange typed mail with receipts and
@@ -18,7 +25,8 @@ deadlines, and place advisory claims on the few things that genuinely need
 exclusivity.
 
 Lanes reports; it never acts. No agent can act on another through it, and the
-worst message you can receive is one you may decline.
+worst message you can receive is one you may decline. An agent gets the facts
+and decides for itself, which is the same principle applied one level down.
 
 ```sh
 brew install agenxy/lanes/lanes
