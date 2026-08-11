@@ -1,12 +1,18 @@
 ## Agenxy
 
-Local-first infrastructure for fleets of AI agents.
+Local-first software for technical users. It runs on your machine, does what you
+asked, and nothing it learns leaves the machine.
+
+Everything here is Apache 2.0 and works completely, offline, with no trial, no
+licence key and no telemetry. We do not log what you do with our software. If one
+of our servers were breached tomorrow, nobody should need to change a password,
+because there is nothing held about you to find.
 
 ### [Lanes](https://github.com/agenxy/lanes)
 
-Coordination and situational awareness for the AI agents running on your machine,
-across whatever projects they have open. Each
-agent registers a lane, declares what it is pursuing, and is told immediately if
+The first of them. Coordination and situational awareness for the AI agents
+running on your machine, across whatever projects they have open. Each agent
+registers a lane, declares what it is pursuing, and is told immediately if
 someone else is already pursuing it. Agents exchange typed mail with receipts and
 deadlines, and place advisory claims on the few things that genuinely need
 exclusivity.
@@ -21,12 +27,10 @@ brew install agenxy/lanes/lanes
 Two static binaries, no database, no runtime dependencies. Agents connect over
 MCP. [Fifteen-minute tutorial](https://github.com/agenxy/lanes/blob/main/docs/TUTORIAL.md).
 
-### How we work
+More is on the way, and it will show up here when it is ready rather than when it
+is announced.
 
-Everything here is Apache 2.0, and works completely, offline, with no trial, no
-licence key and no telemetry. We do not log what you do with our software. If one
-of our servers were breached tomorrow, nobody should need to change a password,
-because there is nothing held about you to find.
+### How we work
 
 - **[Charter](https://github.com/agenxy/.github/blob/main/CHARTER.md)**: what we
   will and will not build, and what we owe the people who use it.

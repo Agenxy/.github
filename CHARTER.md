@@ -22,6 +22,25 @@ Pick it at creation rather than later. Relicensing works, because MIT permits
 sublicensing, but the cost scales with the number of people you have to ask. With
 one outside contributor it is a courtesy message. With fifty it is a project.
 
+## The user is the authority
+
+Our software executes what it was asked to do. It does not reserve a namespace
+for itself, refuse a technically valid instruction because it disapproves,
+disguise a failure to look tidier, or invent restrictions that serve us rather
+than the person running it. Power over your own machine should be legible and
+reversible.
+
+That is not licence for careless defaults. Distinguish intent from accident,
+authenticate anything that mutates, keep an audit trail the user can read, and
+make consequences understandable without becoming paternalistic. Say what
+happened and what it means; do not decide on their behalf what they are allowed
+to want.
+
+The two projects this was written from both arrived at it independently, which is
+how it earned a place here rather than in one repository: one reports on agents
+and never acts on them, the other maps any name the user asks for and declines to
+moralise about which names those are.
+
 ## Privacy
 
 **We do not log what you do with our software.** Not usage, not telemetry, not
