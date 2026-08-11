@@ -68,11 +68,11 @@ scores the same. Say which one you have.
 
 ## Native by default
 
-**No shell scripts.** Not for builds, installs, releases, task running, git
-hooks, test harnesses or application entry points. Shell is untyped, continues
-past failures unless every script remembers to ask it not to, quotes wrongly
-under whitespace, and cannot be tested or type checked. A `.sh` file is
-unreviewable glue, and it accumulates.
+**No shell scripts**, with the narrow exceptions in the next section. Not for
+builds, releases, task running, git hooks, test harnesses or application entry
+points. Shell is untyped, continues past failures unless every script remembers
+to ask it not to, quotes wrongly under whitespace, and cannot be tested or type
+checked. A `.sh` file is unreviewable glue, and it accumulates.
 
 | Instead of a shell script | Write |
 |---|---|
@@ -83,6 +83,49 @@ unreviewable glue, and it accumulates.
 
 Running commands interactively is fine. Persisting them as a script is what this
 forbids.
+
+### Where shell is genuinely the only option
+
+We live in the terminal, and a few places accept nothing else. The test is not
+"shell would be easier here". It is **whether anything else can run at all**.
+
+- **Bootstrap.** A script that obtains the toolchain cannot be written in the
+  toolchain. If a user has no Python, no `uv` and no package manager entry, the
+  first thing they run has to be shell. This is bootstrapping specifically, not
+  installing: once a runtime exists, `task install` and its equivalents are
+  ordinary programs and the exception has stopped applying.
+- **Shell completions.** A zsh or bash completion is shell by definition.
+  Generate it from the program rather than hand-maintaining it, so the source of
+  truth stays in a typed language.
+- **Shell integration.** Snippets a user adds to their profile, of the
+  `eval "$(tool init zsh)"` shape. The program emits the shell; we do not keep a
+  file of it.
+
+Prefer a package manager where one exists. Homebrew, apt, winget and the
+language registries are reviewed, versioned, upgradeable and revocable, and a
+bootstrap script is none of those things. The script is the fallback for people
+those channels do not reach, not the front door.
+
+**A bootstrap script is held to stricter rules than ordinary code, because it
+runs as the first thing on a machine we know nothing about, often piped straight
+from the network into a shell.**
+
+- Its only job is to obtain the toolchain and hand off. The moment a real
+  runtime exists, control passes to a real program. Logic that accumulates here
+  is logic nobody can test.
+- POSIX `sh`, not bash. The machine may not have bash, and on macOS the bash
+  that exists is ancient.
+- `set -eu` on the first line, every expansion quoted, and no unguarded pipe
+  whose failure you would not notice.
+- **Verify what it downloads.** Check a signature or a pinned checksum before
+  executing anything fetched. `curl | sh` is the single most attractive
+  supply-chain target we could offer, and "it came from our domain over TLS" is
+  not verification.
+- Idempotent and safe to re-run. Refuse to run as root unless it truly needs to,
+  and say what it is about to do before doing it.
+- Serve it from the repository, over HTTPS, at a stable path, and keep it short
+  enough that a cautious person can read the whole thing before running it.
+  Someone will, and they are right to.
 
 **No subprocesses as an architecture.** Spawning a process to do work that a
 library call could do is slow, hard to observe, hard to test, and turns every
@@ -185,7 +228,9 @@ it should be:
 
 - Licence and its metadata checked at repository creation.
 - Linters configured with warnings fatal and the size limits above.
-- A check that no `.sh` file has entered the tree.
+- A check that no `.sh` file has entered the tree, with a small explicit
+  allowlist for the bootstrap and completion cases above. An allowlist entry
+  is a decision, so it is reviewed like one.
 - Toolchain pins verified in CI, and dependency updates automated.
 - Prose checks for the writing rules that can be tested, starting with em dashes.
 - A gate whose exit status is the source of truth. Read the status, not the
