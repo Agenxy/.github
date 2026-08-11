@@ -9,20 +9,17 @@ is not acceptable is departing from one silently, or because it was quicker.
 
 ## Make the elite technical choice
 
-The standing instruction, and the one the rest of this document is downstream of:
-**no corners cut, no workarounds left in place, no security or performance
-problem postponed.** If the right approach costs a day and the workaround costs
-an hour, take the day, and if you genuinely cannot, write down what the real fix
-is and what it will cost before you ship the other thing.
+No corners cut, no workarounds left in place, no security or performance problem
+postponed. If the right approach costs a day and the workaround costs an hour,
+take the day. If you genuinely cannot, write down what the real fix is and what
+it will cost before shipping the other thing.
 
-Architect for scale from the start. Not premature optimisation, which is a
-different mistake, but the structural decisions that are expensive to reverse:
-where state lives, what is authoritative, what can be rebuilt, what has to be
-correct under concurrency.
+Architect for scale from the start: not premature optimisation, but the
+decisions that are expensive to reverse. Where state lives, what is
+authoritative, what can be rebuilt, what has to be correct under concurrency.
 
-Code quality, architecture and design are held to an elite standard. Aesthetics
-and style matter, and they yield to technical considerations when the two
-conflict. They usually do not conflict.
+Aesthetics matter and yield to technical considerations when the two conflict.
+They usually do not conflict.
 
 ## Versions
 
@@ -127,15 +124,13 @@ from the network into a shell.**
   enough that a cautious person can read the whole thing before running it.
   Someone will, and they are right to.
 
-**No subprocesses as an architecture.** Spawning a process to do work that a
-library call could do is slow, hard to observe, hard to test, and turns every
-error into a parsing problem. Where components must talk, prefer an interface
-over a pipe.
+**No subprocesses as an architecture.** Spawning a process to do what a library
+call could do is slow, hard to observe, hard to test, and turns every error into
+a parsing problem.
 
-**Native bindings over boundary chatter.** When two languages have to meet, bind
-them directly rather than serialising across a socket or a stdio pipe for every
-call. The cost of a boundary is paid on every crossing, and a design that crosses
-constantly has put the boundary in the wrong place.
+**Native bindings over boundary chatter.** When two languages meet, bind them
+directly rather than serialising across a pipe for every call. A design that
+crosses constantly has put the boundary in the wrong place.
 
 **Python is for automation**, and always through `uv` with PEP 723 inline
 metadata and a `#!/usr/bin/env -S uv run --script` shebang. Never bare `python3`,
@@ -172,9 +167,8 @@ schedule pressure that makes that acceptable.
 
 ## The experience of using it
 
-Treat user experience, interface design and developer experience as first-class
-requirements rather than polish applied at the end. Using our software should be
-a genuine pleasure.
+Treat interface and developer experience as requirements, not polish applied at
+the end.
 
 **Errors are the product.** An error message should say what happened, why, and
 what the reader should do next. It is written for somebody who is confused, in a
@@ -192,10 +186,7 @@ script.
 
 ## Writing
 
-The prose in a project is part of the project. Aim for excellent, tasteful,
-nuanced writing that stays accessible.
-
-Avoid the vocabulary and shapes that read as machine-written: em dashes; delve,
+Aim for writing that is precise and easy to read. Avoid the vocabulary and shapes that read as machine-written: em dashes; delve,
 leverage, foster, seamless, robust, cutting-edge, pivotal, meticulous,
 intricate, paramount, tapestry, realm, landscape, beacon, journey, showcase,
 underscore, unleash, empower, navigate, demystify, myriad, plethora,
@@ -212,14 +203,13 @@ typo.
 
 ## Documentation
 
-Excellent documentation is a deliverable, not an afterthought: a README that
-respects the reader's time, a tutorial that has actually been followed
-end to end, guides for the parts that need them, manpages where the platform
-expects them, and reference material that is generated rather than transcribed.
+A README that respects the reader's time, a tutorial somebody has actually
+followed end to end, manpages where the platform expects them, and reference
+material that is generated rather than transcribed.
 
 Documentation that has drifted from the code is worse than none, because it is
-believed. Where a fact lives in two places, make one of them canonical and make
-the drift fail the build.
+believed. Where a fact lives in two places, make one canonical and make the drift
+fail the build.
 
 ## Enforcement
 
