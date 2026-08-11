@@ -13,7 +13,12 @@ The practical form of it is **sovereignty**. Your machine is yours and our
 software runs there as a guest: no account, no licence server, works with the
 network unplugged, data on your disk in a form you can read without us, and
 **nothing we can change from our side after you install it.** No forced update,
-no remote kill switch. An update happens because you chose it.
+no remote kill switch, no phone-home. An update happens because you chose it.
+
+Lanes is the worked example. Its ledger is append-only JSONL you can read in any
+text editor; the only encrypted parts are private message bodies, under a key
+that lives beside them and never leaves the machine. Every network call it makes
+goes to 127.0.0.1.
 
 Everything here is Apache 2.0, and we do not log what you do with it. If one of
 our servers were breached tomorrow, nobody should need to change a password,

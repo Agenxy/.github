@@ -26,8 +26,9 @@ than a sentiment:
 
 - It runs on hardware you control, and works with the network unplugged.
 - It needs no account, no licence server and nobody's permission to start.
-- Its data is on your disk, in a form you can read without our software, and
-  deleting our software does not take your work with it.
+- Its data is on your disk in a form you can read without our software, and
+  deleting our software does not take your work with it. Where something must be
+  encrypted at rest, the key sits beside it on the same machine and never leaves.
 - You can read it, change it, fork it, and run the fork instead.
 - **We cannot change what it does on your machine.** No forced update, no remote
   kill switch, no behaviour that we can alter from our side after you installed
