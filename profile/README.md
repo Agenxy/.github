@@ -1,7 +1,8 @@
 ## Agenxy
 
-**Agency**: the ability to make decisions and act independently. That is what the
-name is for, and it is the thing every project here is built toward.
+**Agency**: the ability to make decisions and act independently. That is the
+thing every project here is built toward, whatever else they have in common,
+which is often very little.
 
 Software should hand you the information and the controls, then get out of the
 way. It should not decide on your behalf what you are allowed to want, obscure
@@ -44,8 +45,15 @@ brew install agenxy/lanes/lanes
 Two static binaries, no database, no runtime dependencies. Agents connect over
 MCP. [Fifteen-minute tutorial](https://github.com/agenxy/lanes/blob/main/docs/TUTORIAL.md).
 
-More is on the way, and it will show up here when it is ready rather than when it
-is announced.
+More is on the way, with less in common with Lanes than you might expect. It will
+show up here when it is ready rather than when it is announced.
+
+### The name
+
+Agents. Agency, in the sense above. An agency, as in a firm. `xy`, which looks
+like coordinates and reads like the start of a list that keeps going. It is a
+good name that happens to fit several things we care about. We are not going to
+pretend it was a deduction.
 
 ### How we work
 

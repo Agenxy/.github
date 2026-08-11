@@ -7,11 +7,15 @@ that contradicts it, this document wins and the repository is wrong.
 [ENGINEERING.md](ENGINEERING.md) is the technical half: how we build. This one is
 why.
 
-## What the name is for
+## What we are for
 
 **Agency: the ability to make decisions and act independently.** Everything below
 is downstream of it, and when two rules here appear to conflict, the one that
 leaves more decisions with the user wins.
+
+Not derived from the name. The name is a good name that reads several ways at
+once, and this is simply what we care about; the two suit each other, which is a
+pleasant coincidence rather than an argument.
 
 The failure we are organised against is a decision that was yours being held by
 somebody else. It usually arrives wearing something reasonable. A default you
@@ -35,9 +39,11 @@ than a sentiment:
   it. An update happens because you chose it.
 
 This is not a preference for a category of software. It is not command-line
-software, or developer tools, or any particular architecture, though ours tend to
-be those things because that is where the decisions can still be handed back. It
-is about who ends up holding the decision.
+software, or developer tools, or tooling for AI agents, or any particular
+architecture, though ours tend to be those things because that is where the
+decisions can still be handed back. Projects here will have little in common with
+each other, and that is expected: the test is who ends up holding the decision,
+not what the thing does.
 
 ## Licence
 
