@@ -39,7 +39,7 @@ worst message you can receive is one you may decline. An agent gets the facts
 and decides for itself, which is the same principle applied one level down.
 
 ```sh
-brew install agenxy/lanes/lanes
+brew install agenxy/tap/lanes
 ```
 
 Two static binaries, no database, no runtime dependencies. Agents connect over
