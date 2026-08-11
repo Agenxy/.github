@@ -5,8 +5,8 @@ This is the organisation-wide default. A repository with its own
 
 Two documents govern every project here:
 
-- **[CHARTER.md](CHARTER.md)** is what we will and will not build, and what we
-  owe the people who use it. Licensing, privacy, and the line we do not cross.
+- **[VALUES.md](VALUES.md)** is the short version of what we care about:
+  licensing, privacy, and the line we do not cross.
 - **[ENGINEERING.md](ENGINEERING.md)** is how we build. Versions, warnings,
   size limits, languages, security, the experience of using the thing, and how
   we write.

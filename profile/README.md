@@ -22,6 +22,6 @@ More is on the way, with less in common with Lanes than you might expect.
 ---
 
 Apache 2.0, works offline, no account, no licence key, no telemetry. ·
-[Charter](https://github.com/agenxy/.github/blob/main/CHARTER.md) ·
+[Values](https://github.com/agenxy/.github/blob/main/VALUES.md) ·
 [Engineering standards](https://github.com/agenxy/.github/blob/main/ENGINEERING.md) ·
 [Contributing](https://github.com/agenxy/.github/blob/main/CONTRIBUTING.md)

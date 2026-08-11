@@ -1,6 +1,6 @@
 # Agenxy engineering standards
 
-How we build, in every repository in this organisation. [CHARTER.md](CHARTER.md)
+How we build, in every repository in this organisation. [VALUES.md](VALUES.md)
 is why we build it that way.
 
 These are defaults with reasons attached, not commandments. A project may depart
@@ -156,7 +156,7 @@ Use `bun` for JavaScript and TypeScript work, never `npm`.
 
 ## Security and privacy
 
-The charter states the position; this is the practice.
+VALUES.md states the position; this is the practice.
 
 Threat-model before you build, not after. Assume the process is hostile, the
 input is hostile, and the filesystem is shared. Validate at the boundary, and
