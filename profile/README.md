@@ -9,11 +9,15 @@ what it is doing, report on you to somebody else, or stop working because a
 licence server had an opinion. Those are not separate complaints. They are all
 the same one: someone else holding a decision that was yours.
 
-So everything here is Apache 2.0 and works completely, offline, with no trial, no
-licence key and no telemetry. We do not log what you do with our software. If one
-of our servers were breached tomorrow, nobody should need to change a password,
-because there is nothing held about you to find. Those follow from the first
-paragraph rather than sitting beside it.
+The practical form of it is **sovereignty**. Your machine is yours and our
+software runs there as a guest: no account, no licence server, works with the
+network unplugged, data on your disk in a form you can read without us, and
+**nothing we can change from our side after you install it.** No forced update,
+no remote kill switch. An update happens because you chose it.
+
+Everything here is Apache 2.0, and we do not log what you do with it. If one of
+our servers were breached tomorrow, nobody should need to change a password,
+because there is nothing held about you to find.
 
 ### [Lanes](https://github.com/agenxy/lanes)
 

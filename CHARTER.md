@@ -20,10 +20,23 @@ you first. A tool that refuses a legitimate instruction because its author
 disapproved of the instruction. A licence check between you and work you already
 paid for. Those look like separate complaints and are one.
 
-This is not a preference for a category of software. It is not local-first
-software, or command-line software, or developer tools, though ours tend to be
-those things because that is where the decisions can still be handed back. It is
-about who ends up holding the decision.
+The practical form of it is **sovereignty**: your machine is yours, and our
+software runs there as a guest. Concretely, and each of these is testable rather
+than a sentiment:
+
+- It runs on hardware you control, and works with the network unplugged.
+- It needs no account, no licence server and nobody's permission to start.
+- Its data is on your disk, in a form you can read without our software, and
+  deleting our software does not take your work with it.
+- You can read it, change it, fork it, and run the fork instead.
+- **We cannot change what it does on your machine.** No forced update, no remote
+  kill switch, no behaviour that we can alter from our side after you installed
+  it. An update happens because you chose it.
+
+This is not a preference for a category of software. It is not command-line
+software, or developer tools, or any particular architecture, though ours tend to
+be those things because that is where the decisions can still be handed back. It
+is about who ends up holding the decision.
 
 ## Licence
 
@@ -76,9 +89,9 @@ vulnerability. Design for that outcome from the start; it is not something you
 retrofit.
 
 This is a design constraint, not a promise about our diligence. Any system whose
-safety depends on us being careful with data we hold is the wrong system. Prefer
-local-first storage, encryption where the key stays with the user, and protocols
-that never need the data in the first place.
+safety depends on us being careful with data we hold is the wrong system. Keep
+the data on the user's own machine, encrypt with a key that stays with them, and
+prefer protocols that never need the data in the first place.
 
 ## No restrictions
 
