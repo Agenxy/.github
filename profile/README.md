@@ -40,7 +40,7 @@ Released — v0.1.0 · [Milestones](https://github.com/Agenxy/remap/blob/main/do
 
 ### [Supgang](https://github.com/Agenxy/supgang) &nbsp;·&nbsp; Rust
 
-Sovereign peer address discovery for computers whose addresses change. Each
+Finds the current address of a computer whose address keeps changing. Each
 computer gets a stable cryptographic identity, and authorised members exchange
 freshly signed network addresses when those addresses move.
 
