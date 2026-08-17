@@ -9,14 +9,15 @@ account, no external service, and no telemetry.
 
 ### [Dibs](https://github.com/Agenxy/dibs) &nbsp;·&nbsp; Go
 
-Coordination for fleets of AI agents. Agents register, declare what they are
-working on, and read what others have declared. Dibs reports overlapping work
-and directory contention.
+Keeps your agents in the loop about each other, and out of each other's way.
+They register, declare what they are working on, and read what others have
+declared; Dibs reports overlapping work and directory contention.
 
 It reports and never acts. Claims are advisory, so nothing prevents writing to
 a claimed directory, and Dibs cannot assign work, schedule it, spawn it, or
 drive an agent. State is an append-only hash-chained ledger, encrypted at rest,
-and the daemon runs locally.
+so the board rebuilds exactly from its own history and a crash can neither
+invent coordination state nor lose it. The daemon runs locally.
 
 Released — v0.0.5 · [Tutorial](https://github.com/Agenxy/dibs/blob/main/docs/TUTORIAL.md) · [Philosophy](https://github.com/Agenxy/dibs/blob/main/PHILOSOPHY.md)
 
