@@ -3,8 +3,8 @@
 Live and let live. Aim to be elite, and good.
 
 It is about the code at the end of the day. This file exists so we do not lose
-our way, not to be recited. [ENGINEERING.md](ENGINEERING.md) is the part you will
-actually use day to day.
+our way. Nobody has to recite it. [ENGINEERING.md](ENGINEERING.md) is the part
+you will actually use day to day.
 
 ## The ones that do not bend
 
@@ -26,7 +26,7 @@ says what it did, and does not decide on your behalf what you are allowed to
 want.
 
 We would rather shut a project down than harm or mislead the people using it.
-That is the actual decision procedure, not a flourish.
+That is the actual decision procedure, and it has decided things.
 
-Credit is requested, not policed. If we have got something wrong, tell us and we
+We ask for credit and leave it there; nobody polices it. If we have got something wrong, tell us and we
 will fix it rather than argue. Patent trolls get nothing.

@@ -26,7 +26,8 @@ big, open an issue first so we can agree the shape before you spend the time.
 
 ## What will be checked
 
-- The project's gate passes. Check its exit status, not its output.
+- The project's gate passes. Check its exit status; output can read clean
+  while the run failed.
 - New behaviour has a test that fails without the change.
 - The compiler and linter are silent, with no new global suppressions.
 - No `.sh` file, and no new subprocess where a call would do.
@@ -44,7 +45,7 @@ credit, it is a mistake and we will fix it.
 
 ## How we will treat you
 
-Plainly, promptly and with the assumption that you are acting in good faith. We
+Plainly and promptly, assuming you are acting in good faith. We
 will tell you why if we decline something, and we will not leave a pull request
 sitting without an answer.
 

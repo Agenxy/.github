@@ -3,7 +3,8 @@
 How we build, in every repository in this organisation. [VALUES.md](VALUES.md)
 is why we build it that way.
 
-These are defaults with reasons attached, not commandments. A project may depart
+These are defaults with reasons attached. None of them is a commandment: a
+project may depart
 from any of them, in writing, in the repository, with the reason recorded. What
 is not acceptable is departing from one silently, or because it was quicker.
 
@@ -100,8 +101,8 @@ We live in the terminal, and a few places accept nothing else. The test is not
 
 Prefer a package manager where one exists. Homebrew, apt, winget and the
 language registries are reviewed, versioned, upgradeable and revocable, and a
-bootstrap script is none of those things. The script is the fallback for people
-those channels do not reach, not the front door.
+bootstrap script is none of those things. Those channels are the front door. The
+script exists for the people they do not reach.
 
 **A bootstrap script is held to stricter rules than ordinary code, because it
 runs as the first thing on a machine we know nothing about, often piped straight
@@ -110,8 +111,8 @@ from the network into a shell.**
 - Its only job is to obtain the toolchain and hand off. The moment a real
   runtime exists, control passes to a real program. Logic that accumulates here
   is logic nobody can test.
-- POSIX `sh`, not bash. The machine may not have bash, and on macOS the bash
-  that exists is ancient.
+- POSIX `sh`. The machine may have no bash at all, and the bash macOS ships
+  is ancient.
 - `set -eu` on the first line, every expansion quoted, and no unguarded pipe
   whose failure you would not notice.
 - **Verify what it downloads.** Check a signature or a pinned checksum before
@@ -144,7 +145,7 @@ Preferred: **C++, Go, Python, Rust, Swift, TypeScript.**
 Avoided: **Bash and other shells, Objective-C** (write Swift), **JavaScript**
 (write TypeScript), **PHP, Perl, PowerShell, BASIC.**
 
-Avoided means avoided, not forbidden. If a platform accepts nothing else, say so
+Avoided means discouraged. If a platform accepts nothing else, say so
 explicitly and explain why before writing it.
 
 Use `bun` for JavaScript and TypeScript work, never `npm`.
@@ -153,7 +154,7 @@ Use `bun` for JavaScript and TypeScript work, never `npm`.
 
 VALUES.md states the position; this is the practice.
 
-Threat-model before you build, not after. Assume the process is hostile, the
+Threat-model before you build. Assume the process is hostile, the
 input is hostile, and the filesystem is shared. Validate at the boundary, and
 know which side of it you are on.
 
@@ -167,8 +168,8 @@ schedule pressure that makes that acceptable.
 
 ## The experience of using it
 
-Treat interface and developer experience as requirements, not polish applied at
-the end.
+Treat interface and developer experience as requirements, budgeted at the
+start.
 
 **Errors are the product.** An error message should say what happened, why, and
 what the reader should do next. It is written for somebody who is confused, in a
@@ -179,14 +180,19 @@ failed is a bug report we chose not to write.
 does and what happens by default. Nobody should have to read the source to use
 the tool.
 
-**The terminal experience matters.** Alignment, colour that degrades gracefully
-when it is not a terminal, output that is readable by a person and parseable by a
-machine when asked, sensible behaviour when piped, no surprise interactivity in a
+**The terminal experience matters.** Align columns. Drop colour when the output
+is not a terminal. Keep output readable by a person, and parseable by a machine
+when asked. Behave when piped, and never open an interactive prompt inside a
 script.
 
 ## Writing
 
-Aim for writing that is precise and easy to read. Avoid the vocabulary and shapes that read as machine-written: em dashes; delve,
+Aim for writing that is precise and easy to read. Avoid the vocabulary and
+shapes that read as machine-written.
+
+<!-- prose-check: off -->
+
+Em dashes; delve,
 leverage, foster, seamless, robust, cutting-edge, pivotal, meticulous,
 intricate, paramount, tapestry, realm, landscape, beacon, journey, showcase,
 underscore, unleash, empower, navigate, demystify, myriad, plethora,
@@ -194,6 +200,8 @@ comprehensive, transformative, revolutionary, game-changer; furthermore,
 moreover, additionally, in conclusion; "it is not just X, it is Y"; the rule of
 three used as a rhythm; hedges like "it is important to consider"; and openers
 that clear the throat before saying anything.
+
+<!-- prose-check: on -->
 
 An em dash is doing one of a few jobs, so replace it with the job rather than
 with a single substitute. A colon when what follows explains what came before. A
@@ -223,6 +231,6 @@ it should be:
   is a decision, so it is reviewed like one.
 - Toolchain pins verified in CI, and dependency updates automated.
 - Prose checks for the writing rules that can be tested, starting with em dashes.
-- A gate whose exit status is the source of truth. Read the status, not the
-  output: grepping a log for the word "failed" has already reported a red run as
-  green in one of these projects.
+- A gate whose exit status is the source of truth. Read the status. Grepping
+  a log for the word "failed" has already reported a red run as green in one
+  of these projects.
