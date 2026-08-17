@@ -1,7 +1,7 @@
 ## Agenxy
 
-Open-source software that runs on your own machine, with no
-account, no external service, and no telemetry.
+Open-source software that runs on your own machine, with no account, no
+external service, and no telemetry.
 
 **[agenxy.org](https://agenxy.org)**
 
