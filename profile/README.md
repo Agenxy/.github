@@ -1,7 +1,7 @@
 ## Agenxy
 
-Sovereign open-source software. Every project runs on your own machine, with no
-account, no external service, and no telemetry.
+Open-source software that runs on your own machine, with no account, no
+external service, and no telemetry.
 
 **[agenxy.org](https://agenxy.org)**
 
@@ -9,14 +9,15 @@ account, no external service, and no telemetry.
 
 ### [Dibs](https://github.com/Agenxy/dibs) &nbsp;·&nbsp; Go
 
-Coordination for fleets of AI agents. Agents register, declare what they are
-working on, and read what others have declared. Dibs reports overlapping work
-and directory contention.
+Keeps your agents in the loop about each other, and out of each other's way.
+They register, declare what they are working on, and read what others have
+declared; Dibs reports overlapping work and directory contention.
 
 It reports and never acts. Claims are advisory, so nothing prevents writing to
 a claimed directory, and Dibs cannot assign work, schedule it, spawn it, or
 drive an agent. State is an append-only hash-chained ledger, encrypted at rest,
-and the daemon runs locally.
+so the board rebuilds exactly from its own history and a crash can neither
+invent coordination state nor lose it. The daemon runs locally.
 
 Released — v0.0.5 · [Tutorial](https://github.com/Agenxy/dibs/blob/main/docs/TUTORIAL.md) · [Philosophy](https://github.com/Agenxy/dibs/blob/main/PHILOSOPHY.md)
 
@@ -39,7 +40,7 @@ Released — v0.1.0 · [Milestones](https://github.com/Agenxy/remap/blob/main/do
 
 ### [Supgang](https://github.com/Agenxy/supgang) &nbsp;·&nbsp; Rust
 
-Sovereign peer address discovery for computers whose addresses change. Each
+Finds the current address of a computer whose address keeps changing. Each
 computer gets a stable cryptographic identity, and authorised members exchange
 freshly signed network addresses when those addresses move.
 
