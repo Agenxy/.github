@@ -47,12 +47,12 @@ commits, and when someone is representing the project in public.
 
 ## Enforcement
 
-Report unacceptable behaviour privately, through the **Report a vulnerability**
-form in the Security tab of whichever repository it happened in. That form is a
-private channel to the maintainers, and it is used here for conduct reports as
-well as security ones because it is the only private channel GitHub provides
-that does not require publishing an address. Direct message to a maintainer
-works too. Reports are handled confidentially, and you will get a response.
+Report unacceptable behaviour privately to **abuse@agenxy.org**. Reports are
+handled confidentially, and you will get a response.
+
+If you would rather not use email, the **Report a vulnerability** form in the
+Security tab of any Agenxy repository is a private channel to the maintainers
+and works for conduct reports too, as does a direct message to a maintainer.
 
 If the person you would be reporting to is the problem, use
 [GitHub's own abuse report](https://github.com/contact/report-abuse), which does

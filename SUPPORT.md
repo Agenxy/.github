@@ -8,7 +8,7 @@ This is the default for Agenxy repositories. A repository with its own
 | "How do I…", "should this…", thinking out loud | the repository's Discussions tab |
 | Something behaved differently from what it said it would | open a bug |
 | Something the project should do and doesn't | open a feature request |
-| A security vulnerability | **not a public issue** — see [SECURITY.md](SECURITY.md) |
+| A security vulnerability | **not a public issue** — security@agenxy.org, or see [SECURITY.md](SECURITY.md) |
 | You want to change the code | [CONTRIBUTING.md](CONTRIBUTING.md) |
 
 Check whether the project ships a `doctor` command before filing. Several do,

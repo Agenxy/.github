@@ -11,6 +11,16 @@ That form is a private channel between you and the maintainers, and it stays
 private until an advisory is published. Private vulnerability reporting is
 enabled on every Agenxy repository.
 
+**Or email security@agenxy.org**, which reaches a maintainer whatever the
+project is. Use it when you are unsure which repository is affected, when the
+issue spans more than one, or when you would rather not open a GitHub account
+to tell us something. The advisory form is still better once the project is
+known, because the report becomes the published advisory with your credit on
+it.
+
+Both routes are listed in
+[agenxy.org/.well-known/security.txt](https://agenxy.org/.well-known/security.txt).
+
 Do not open a public issue for a vulnerability. There is no bug bounty.
 
 Useful things to include, none of them required: what you did, what happened,
