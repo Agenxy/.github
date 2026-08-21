@@ -40,16 +40,31 @@ Released — v0.1.0 · [Milestones](https://github.com/Agenxy/remap/blob/main/do
 
 ### [Supgang](https://github.com/Agenxy/supgang) &nbsp;·&nbsp; Rust
 
-Finds the current address of a computer whose address keeps changing. Each
-computer gets a stable cryptographic identity, and authorised members exchange
-freshly signed network addresses when those addresses move.
+Keeps track of your computers' changing public IP addresses without a
+third-party service. Each computer gets a stable cryptographic identity, and
+authorised members exchange freshly signed network addresses when those
+addresses move.
 
 No account, no public discovery service, no vendor relay, no required server.
 Direct peer connections work today on macOS and Linux; automatic LAN
 rendezvous, NAT traversal and user-owned relay mode are later milestones, so a
 peer currently needs a reachable address.
 
-Prerelease — v0.1.0 · [Threat model](https://github.com/Agenxy/supgang/blob/main/docs/security/threat-model.md)
+Testing across networks · [Threat model](https://github.com/Agenxy/supgang/blob/main/docs/security/threat-model.md)
+
+### [Quarters](https://github.com/Agenxy/quarters) &nbsp;·&nbsp; Rust
+
+Gives a shell its own configuration, history and credentials, on the same
+account. A space is a private folder; a process launched into it reads and
+writes its configuration there while running as the same user, with the same
+UID, groups and access to the filesystem.
+
+It is not a VM, a container, an alternate Unix user, or a security boundary.
+Filesystem confinement is not implemented, `sudo` escapes the space, and an
+absolute path into your real home still reaches it. `doctor` reports Seatbelt
+and Landlock as gaps rather than claiming protection that is not there.
+
+Alpha — v0.1.0-alpha.2 · [Privacy](https://github.com/Agenxy/quarters/blob/main/PRIVACY.md)
 
 ---
 
