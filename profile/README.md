@@ -19,7 +19,7 @@ drive an agent. State is an append-only hash-chained ledger, encrypted at rest,
 so the board rebuilds exactly from its own history and a crash can neither
 invent coordination state nor lose it. The daemon runs locally.
 
-Released — v0.0.5 · [Tutorial](https://github.com/Agenxy/dibs/blob/main/docs/TUTORIAL.md) · [Philosophy](https://github.com/Agenxy/dibs/blob/main/PHILOSOPHY.md)
+Released — v0.0.6 · [Tutorial](https://github.com/Agenxy/dibs/blob/main/docs/TUTORIAL.md) · [Philosophy](https://github.com/Agenxy/dibs/blob/main/PHILOSOPHY.md)
 
 ### [Remap](https://github.com/Agenxy/remap) &nbsp;·&nbsp; Rust
 
