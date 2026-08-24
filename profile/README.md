@@ -7,7 +7,7 @@ machine, with no account, no external service, and no telemetry.
 
 ---
 
-### [Dibs](https://github.com/Agenxy/dibs) &nbsp;·&nbsp; Go
+### <img src="https://raw.githubusercontent.com/Agenxy/dibs/main/docs/icon.svg" width="20" height="20" align="top" alt=""> [Dibs](https://github.com/Agenxy/dibs) &nbsp;·&nbsp; Go
 
 Keeps your agents in the loop about each other, and out of each other's way.
 They register, declare what they are working on, and read what others have
@@ -21,7 +21,7 @@ invent coordination state nor lose it. The daemon runs locally.
 
 Released — v0.0.6 · [Tutorial](https://github.com/Agenxy/dibs/blob/main/docs/TUTORIAL.md) · [Philosophy](https://github.com/Agenxy/dibs/blob/main/PHILOSOPHY.md)
 
-### [Remap](https://github.com/Agenxy/remap) &nbsp;·&nbsp; Rust
+### <img src="https://raw.githubusercontent.com/Agenxy/remap/main/docs/icon.svg" width="20" height="20" align="top" alt=""> [Remap](https://github.com/Agenxy/remap) &nbsp;·&nbsp; Rust
 
 Name override and service routing. Maps a hostname to a network-accessible
 address or service, and applies that mapping on enrolled devices. It does not
@@ -38,7 +38,7 @@ later milestones.
 
 Released — v0.1.0 · [Milestones](https://github.com/Agenxy/remap/blob/main/docs/roadmap/MILESTONES.md)
 
-### [Supgang](https://github.com/Agenxy/supgang) &nbsp;·&nbsp; Rust
+### <img src="https://raw.githubusercontent.com/Agenxy/supgang/main/docs/icon.svg" width="20" height="20" align="top" alt=""> [Supgang](https://github.com/Agenxy/supgang) &nbsp;·&nbsp; Rust
 
 Keeps track of your computers' changing public IP addresses without a
 third-party service. Each computer gets a stable cryptographic identity, and
@@ -52,7 +52,7 @@ peer currently needs a reachable address.
 
 Testing across networks · [Threat model](https://github.com/Agenxy/supgang/blob/main/docs/security/threat-model.md)
 
-### [Quarters](https://github.com/Agenxy/quarters) &nbsp;·&nbsp; Rust
+### <img src="https://raw.githubusercontent.com/Agenxy/quarters/main/docs/icon.svg" width="20" height="20" align="top" alt=""> [Quarters](https://github.com/Agenxy/quarters) &nbsp;·&nbsp; Rust
 
 Gives a shell its own configuration, history and credentials, on the same
 account. A space is a private folder; a process launched into it reads and
