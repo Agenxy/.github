@@ -1,9 +1,9 @@
 ## Agenxy
 
-Agenxy cultivates independent software. Every project runs on your own
+Agenxy cultivates independent technology. Every project runs on your own
 machine, with no account, no external service, and no telemetry.
 
-**[agenxy.org](https://agenxy.org)**
+**[agenxy.org](https://agenxy.org)** &nbsp;·&nbsp; [Bluesky @agenxy.org](https://bsky.app/profile/agenxy.org) &nbsp;·&nbsp; [Writing](https://agenxy.org/writing/)
 
 ---
 
@@ -68,7 +68,7 @@ Alpha — v0.1.0-alpha.2 · [Privacy](https://github.com/Agenxy/quarters/blob/ma
 
 ---
 
-Apache 2.0. Everything works offline. No account, no licence key, no telemetry.
+Free and open source; each repository states its licence. Everything works offline. No account, no licence key, no telemetry.
 
 [Values](https://github.com/Agenxy/.github/blob/main/VALUES.md) ·
 [Engineering standards](https://github.com/Agenxy/.github/blob/main/ENGINEERING.md) ·
