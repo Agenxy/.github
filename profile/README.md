@@ -1,7 +1,8 @@
 ## Agenxy
 
-Agenxy cultivates independent technology. Every project runs on your own
-machine, with no account, no external service, and no telemetry.
+Agenxy cultivates open technology. It advances open computing standards and
+works towards fully open computers and software that people can use, change
+and control.
 
 **[agenxy.org](https://agenxy.org)** &nbsp;·&nbsp; [Bluesky @agenxy.org](https://bsky.app/profile/agenxy.org) &nbsp;·&nbsp; [Writing](https://agenxy.org/writing/)
 
